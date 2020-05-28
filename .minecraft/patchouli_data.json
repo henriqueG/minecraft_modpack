@@ -1,0 +1,181 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": true,
+  "bookData": {
+    "naturesaura:book": {
+      "viewedEntries": [
+        "naturesaura:intro/intro",
+        "naturesaura:intro/botany",
+        "naturesaura:intro/aura",
+        "naturesaura:practices/gold_trees",
+        "naturesaura:practices/aura_plants",
+        "naturesaura:practices/tree_ritual",
+        "naturesaura:practices/aura_bottle",
+        "naturesaura:devices/powder_placer",
+        "naturesaura:effects/effect_powder",
+        "naturesaura:effects/animal",
+        "naturesaura:effects/cache_recharge",
+        "naturesaura:effects/plant_boost",
+        "naturesaura:effects/ore_spawn",
+        "naturesaura:items/eye",
+        "naturesaura:creating/on_generating",
+        "naturesaura:creating/ancient_tree",
+        "naturesaura:using/altar",
+        "naturesaura:using/furnace_heater",
+        "naturesaura:using/placer",
+        "naturesaura:using/hopper_upgrade",
+        "naturesaura:using/crushing_catalyst",
+        "naturesaura:devices/grated_chute",
+        "naturesaura:devices/pickup_stopper",
+        "naturesaura:devices/item_distributor",
+        "naturesaura:devices/aura_detector",
+        "naturesaura:devices/aura_timer",
+        "naturesaura:effects/nether_grass",
+        "naturesaura:creating/moss_generator"
+      ],
+      "bookmarks": [],
+      "history": [
+        "naturesaura:creating/ancient_tree",
+        "naturesaura:creating/moss_generator",
+        "naturesaura:effects/animal",
+        "naturesaura:effects/nether_grass",
+        "naturesaura:devices/aura_timer",
+        "naturesaura:devices/aura_detector",
+        "naturesaura:devices/item_distributor",
+        "naturesaura:devices/powder_placer",
+        "naturesaura:devices/pickup_stopper",
+        "naturesaura:devices/grated_chute",
+        "naturesaura:using/crushing_catalyst",
+        "naturesaura:using/hopper_upgrade",
+        "naturesaura:using/placer"
+      ],
+      "completedManualQuests": []
+    },
+    "botania:lexicon": {
+      "viewedEntries": [
+        "botania:basics/welcome",
+        "botania:basics/flowers",
+        "botania:basics/pure_daisy",
+        "botania:devices/fel_pumpkin",
+        "botania:basics/apothecary",
+        "botania:basics/rune_altar",
+        "botania:basics/black_lotus",
+        "botania:basics/lexicon",
+        "botania:basics/wand",
+        "botania:basics/terrasteel",
+        "botania:basics/flower_bag",
+        "botania:generating_flowers/gourmaryllis",
+        "botania:generating_flowers/entropinnyum",
+        "botania:generating_flowers/endoflame",
+        "botania:generating_flowers/hydroangeas",
+        "botania:generating_flowers/munchdew",
+        "botania:generating_flowers/narslimmus",
+        "botania:generating_flowers/arcanerose",
+        "botania:generating_flowers/thermalily",
+        "botania:generating_flowers/intro",
+        "botania:functional_flowers/flower_shrinking",
+        "botania:functional_flowers/agricarnation",
+        "botania:functional_flowers/intro",
+        "botania:functional_flowers/flower_speed",
+        "botania:functional_flowers/bellethorne",
+        "botania:functional_flowers/bergamute",
+        "botania:functional_flowers/clayconia",
+        "botania:functional_flowers/daffomill",
+        "botania:functional_flowers/dreadthorne",
+        "botania:functional_flowers/exoflame",
+        "botania:functional_flowers/fallen_kanade",
+        "botania:functional_flowers/hopperhock",
+        "botania:functional_flowers/hyacidus",
+        "botania:functional_flowers/jaded_amaranthus",
+        "botania:functional_flowers/jiyuulia",
+        "botania:functional_flowers/marimorphosis",
+        "botania:functional_flowers/medumone",
+        "botania:functional_flowers/pollidisiac",
+        "botania:functional_flowers/rannuncarpus",
+        "botania:functional_flowers/solegnolia",
+        "botania:functional_flowers/tangleberrie",
+        "botania:functional_flowers/tigerseye",
+        "botania:functional_flowers/vinculotus",
+        "botania:tools/mana_gear",
+        "botania:tools/grass_horn",
+        "botania:challenges/battery",
+        "botania:challenges/auto_quarry",
+        "botania:devices/pylon",
+        "botania:baubles/bauble_box",
+        "botania:baubles/lava_pendant",
+        "botania:mana/distributor",
+        "botania:mana/rf_generator",
+        "botania:mana/bellows",
+        "botania:ender/ender_dagger",
+        "botania:ender/ender_hand",
+        "botania:ender/ender_eye_block",
+        "botania:ender/piston_relay",
+        "botania:misc/shiny_flowers",
+        "botania:misc/phantom_ink",
+        "botania:misc/mushrooms"
+      ],
+      "bookmarks": [],
+      "history": [
+        "botania:misc/mushrooms",
+        "botania:generating_flowers/endoflame",
+        "botania:generating_flowers/hydroangeas",
+        "botania:basics/welcome",
+        "botania:basics/pure_daisy",
+        "botania:basics/apothecary",
+        "botania:misc/phantom_ink",
+        "botania:misc/shiny_flowers",
+        "botania:ender/piston_relay",
+        "botania:ender/ender_eye_block",
+        "botania:ender/ender_hand",
+        "botania:ender/ender_dagger",
+        "botania:mana/bellows"
+      ],
+      "completedManualQuests": []
+    },
+    "modularrouters:book": {
+      "viewedEntries": [
+        "modularrouters:router/item_router",
+        "modularrouters:router/termination",
+        "modularrouters:modules/activator",
+        "modularrouters:modules/fluid"
+      ],
+      "bookmarks": [],
+      "history": [
+        "modularrouters:modules/fluid",
+        "modularrouters:modules/activator",
+        "modularrouters:router/item_router",
+        "modularrouters:router/termination"
+      ],
+      "completedManualQuests": []
+    },
+    "mysticalagriculture:guide": {
+      "viewedEntries": [
+        "mysticalagriculture:elemental/elemental_essences",
+        "mysticalagriculture:basics/overworld_ores"
+      ],
+      "bookmarks": [],
+      "history": [
+        "mysticalagriculture:basics/overworld_ores",
+        "mysticalagriculture:elemental/elemental_essences"
+      ],
+      "completedManualQuests": []
+    },
+    "rftoolsbase:manual": {
+      "viewedEntries": [
+        "xnet:simple/controller",
+        "xnet:wireless/wireless_router"
+      ],
+      "bookmarks": [
+        {
+          "entry": "xnet:simple/controller",
+          "page": 0
+        }
+      ],
+      "history": [
+        "xnet:simple/controller",
+        "xnet:wireless/wireless_router"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}

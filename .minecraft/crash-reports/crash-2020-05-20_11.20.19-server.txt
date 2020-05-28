@@ -1,0 +1,154 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 5/20/20 11:20 AM
+Description: Ticking block entity
+
+java.lang.NullPointerException: Ticking block entity
+	at me.desht.modularrouters.logic.compiled.CompiledFluidModule1.execute(CompiledFluidModule1.java:66) ~[?:1.15.2-6.1.0-17] {re:classloading}
+	at me.desht.modularrouters.block.tile.TileEntityItemRouter.executeModules(TileEntityItemRouter.java:302) ~[?:1.15.2-6.1.0-17] {re:classloading}
+	at me.desht.modularrouters.block.tile.TileEntityItemRouter.func_73660_a(TileEntityItemRouter.java:275) ~[?:1.15.2-6.1.0-17] {re:classloading}
+	at net.minecraft.world.World.func_217391_K(World.java:1907) ~[?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:lithium.mixins.json:avoid_allocations.MixinWorld,pl:mixin:APP:performant.mixins.json:world.WorldMixin,pl:mixin:A}
+	at net.minecraft.world.server.ServerWorld.func_72835_b(ServerWorld.java:368) ~[?:?] {re:mixin,re:classloading,xf:fml:quark:change-sleeping-player-count,xf:fml:quark:add-rave-hook,pl:mixin:APP:lithium.mixins.json:avoid_allocations.MixinServerWorld,pl:mixin:APP:lithium.mixins.json:fast_tick_scheduler.MixinServerWorld,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:849) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:784) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:114) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:637) [?:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at me.desht.modularrouters.logic.compiled.CompiledFluidModule1.execute(CompiledFluidModule1.java:66)
+	at me.desht.modularrouters.block.tile.TileEntityItemRouter.executeModules(TileEntityItemRouter.java:302)
+	at me.desht.modularrouters.block.tile.TileEntityItemRouter.func_73660_a(TileEntityItemRouter.java:275)
+
+-- Block entity being ticked --
+Details:
+	Name: modularrouters:item_router // me.desht.modularrouters.block.tile.TileEntityItemRouter
+	Block: Block{modularrouters:item_router}[active=true,can_emit=false,facing=east]
+	Block location: World: (-17,61,158), Chunk: (at 15,3,14 in -2,9; contains blocks -32,0,144 to -17,255,159), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Block: Block{modularrouters:item_router}[active=true,can_emit=false,facing=east]
+	Block location: World: (-17,61,158), Chunk: (at 15,3,14 in -2,9; contains blocks -32,0,144 to -17,255,159), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+Stacktrace:
+	at net.minecraft.world.World.func_217391_K(World.java:1907)
+	at net.minecraft.world.server.ServerWorld.func_72835_b(ServerWorld.java:368)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayerEntity['_Tur_'/256, l='Criativo', x=-14.60, y=63.00, z=158.92]]
+	Chunk stats: ServerChunkCache: 2209
+	Level dimension: DimensionType{minecraft:overworld}
+	Level name: Criativo
+	Level seed: 8222030183820422023
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: {}
+	Level spawn location: World: (0,63,160), Chunk: (at 0,3,0 in 0,10; contains blocks 0,0,160 to 15,255,175), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 12972 game time, 12972 day time
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 137247 (now: false), thunder time: 81332 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:849)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:784)
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:114)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:637)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.15.2
+	Minecraft Version ID: 1.15.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_241, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 415468504 bytes (396 MB) / 1829765120 bytes (1745 MB) up to 4653056000 bytes (4437 MB)
+	CPUs: 4
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms1152m -Xmx4992m
+	ModLauncher: 5.1.0+69+master.79f13f7
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/eventbus-2.2.0-service.jar eventbus PLUGINSERVICE 
+		/forge-1.15.2-31.1.91-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.1.91-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.1.1-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.15.2-31.1.91-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.1.91-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.15.2-31.1.91-launcher.jar fml TRANSFORMATIONSERVICE 
+		/MixinBootstrap-1.0.3.jar mixinbootstrap TRANSFORMATIONSERVICE 
+		/MixinBootstrap-1.0.3.jar mixin PLUGINSERVICE 
+		/MixinBootstrap-1.0.3.jar mixinbootstrap PLUGINSERVICE 
+	FML: 31.1
+	Forge: net.minecraftforge:31.1.91
+	FML Language Providers: 
+		javafml@31.1
+		minecraft@1
+	Mod List: 
+		SaveMyStronghold-1.15.2-1.0.0.jar Save My Stronghold! {savemystronghold@1.15.2-1.0.0 DONE}
+		inventorysorter-1.15.2-17.0.0.jar Simple Inventory Sorter {inventorysorter@17.0.0 DONE}
+		Cucumber-1.15.2-3.0.5.jar Cucumber Library {cucumber@3.0.5 DONE}
+		jei-1.15.2-6.0.0.4.jar Just Enough Items {jei@6.0.0.4 DONE}
+		lithium-mc1.15.2-forge-0.4.6-rc3-mod.jar Lithium {lithium@0.4.6-rc3 DONE}
+		AttributeFix-1.15.2-7.0.2.jar AttributeFix {attributefix@7.0.2 DONE}
+		mcw-windows-1.0.1-mc1.15.2_1.15.1.jar Macaw's Windows {mcwwindows@1.0.1 DONE}
+		rsgauges-1.15.2-1.2.2.jar Gauges and Switches {rsgauges@1.2.2 DONE}
+		BetterCaves-1.15.2-1.0.jar YUNG's Better Caves {bettercaves@1.15.2-1.0 DONE}
+		goldenhopper-1.1.1-1.15.2.jar Golden Hopper {goldenhopper@1.1.1 DONE}
+		journeymap-1.15.2-5.7.0b2.jar Journeymap {journeymap@5.7.0b2 DONE}
+		Controlling-6.1.4.jar Controlling {controlling@6.1.4 DONE}
+		Placebo-1.15.2-3.0.2.jar Placebo {placebo@3.0.2 DONE}
+		Bookshelf-1.15.2-5.5.34.jar Bookshelf {bookshelf@5.5.34 DONE}
+		WAWLA-1.15.2-3.0.2.jar WAWLA {wawla@3.0.2 DONE}
+		BotanyPots-1.15.2-2.0.14.jar BotanyPots {botanypots@2.0.14 DONE}
+		u_team_core-1.15.2-2.11.0.156.jar U Team Core {uteamcore@2.11.0.156 DONE}
+		unbreakables-1.15.2-1.0.0.jar Unbreakable Spawners {unbreakables@1.15.2-1.0.0 DONE}
+		DarkUtilities-1.15.2-3.0.5.jar Dark Utilities {darkutils@3.0.5 DONE}
+		Apotheosis-1.15.2-3.1.0.jar Apotheosis {apotheosis@3.1.0 DONE}
+		ProgressiveBosses-2.1.5-mc1.15.2.jar Progressive Bosses {progressivebosses@2.1.5-mc1.15.2 DONE}
+		Morpheus-1.15.2-4.2.50.jar Morpheus {morpheus@version DONE}
+		Hwyla-forge-1.10.8-B72_1.15.2.jar Waila {waila@version DONE}
+		ToastControl-1.15.2-3.0.1.jar Toast Control {toastcontrol@3.0.1 DONE}
+		VTweaks-1.15.2-3.1.6.jar V-Tweaks {vtweaks@3.1.5 DONE}
+		JustEnoughResources-1.15.2-0.10.1.77.jar Just Enough Resources {jeresources@0.10.1.77 DONE}
+		forge-1.15.2-31.1.91-universal.jar Forge {forge@31.1.91 DONE}
+		MysticalAgradditions-1.15.2-3.0.0.jar Mystical Agradditions {mysticalagradditions@3.0.0 DONE}
+		PrettyPipes-1.5.1.jar Pretty Pipes {prettypipes@1.5.1 DONE}
+		MysticalAgriculture-1.15.2-3.0.4.jar Mystical Agriculture {mysticalagriculture@3.0.4 DONE}
+		ironchest-1.15.2-10.0.3.jar Iron Chests {ironchest@1.15.2-10.0.1 DONE}
+		infernalmobs-1.15.1.1.jar Infernal Mobs {infernalmobs@1.15.1.1 DONE}
+		forge-1.15.2-31.1.91-client.jar Minecraft {minecraft@1.15.2 DONE}
+		cofh_core-1.15.2-0.4.0b.jar CoFH Core {cofh_core@0.4.0b DONE}
+		ensorcellation-1.15.2-0.4.1b.jar Ensorcellation {ensorcellation@0.4.1b DONE}
+		useful_backpacks-1.15.2-1.9.4.63.jar Useful Backpacks {usefulbackpacks@1.9.4.63 DONE}
+		torchmaster-2.1.1-rc0.jar Torchmaster {torchmaster@2.1.1-rc0 DONE}
+		MouseTweaks-2.13-mc1.15.1.jar Mouse Tweaks {mousetweaks@2.13 DONE}
+		phosphor-forge-mc1.15.2-0.5.2+build.4.jar Phosphor {phosphor@0.5.2+build.4 DONE}
+		valhelsia_structures-15.0.2a.jar Valhelsia Structures {valhelsia_structures@15.0.2a DONE}
+		jeiintegration_1.15.2-3.1.0.1.jar JEI Integration {jeiintegration@3.1.0.1 DONE}
+		curios-FORGE-1.15.2-2.0.2.2.jar Curios API {curios@FORGE-1.15.2-2.0.2.2 DONE}
+		Botania-r1.15-384.jar Botania {botania@r1.15-384 DONE}
+		Patchouli-1.15.2-1.2-33.jar Patchouli {patchouli@1.15.2-1.2-33 DONE}
+		gravestone-1.17.4.jar Gravestone Mod {gravestone@1.17.4 DONE}
+		AutoRegLib-1.5-40.jar AutoRegLib {autoreglib@1.5-40 DONE}
+		Quark-r2.1-237.jar Quark {quark@r2.1-237 DONE}
+		StorageDrawers-1.15.2-7.0.2.jar Storage Drawers {storagedrawers@1.15.2-7.0.1 DONE}
+		performant-1.15-2.10m.jar Performant {performant@2.10m DONE}
+		themidnight-0.5.7-3.jar The Midnight {midnight@0.5.7-3 DONE}
+		NaturesAura-27.0.jar Nature's Aura {naturesaura@27.0 DONE}
+		mcw-roofs-1.0.2-mc1.15.2_1.15.1.jar Macaw's Roofs {mcwroofs@1.0.2 DONE}
+		AppleSkin-mc1.15.2-forge-1.0.13.jar AppleSkin {appleskin@1.0.13 DONE}
+		AI-Improvements-1.15.2-0.3.0.jar AI-Improvements {aiimprovements@0.3.0 DONE}
+		modular-routers-1.15.2-6.1.0-17.jar Modular Routers {modularrouters@1.15.2-6.1.0-17 DONE}
+		FastLeafDecay-v22.jar FastLeafDecay {fastleafdecay@v22 DONE}
+		overloadedarmorbar-4.0.0.jar Overloaded Armor Bar {overloadedarmorbar@4.0.0 DONE}
+	Player Count: 1 / 8; [ServerPlayerEntity['_Tur_'/256, l='Criativo', x=-14.60, y=63.00, z=158.92]]
+	Data Packs: vanilla, mod:savemystronghold (incompatible), mod:inventorysorter (incompatible), mod:cucumber, mod:jei (incompatible), mod:lithium, mod:attributefix (incompatible), mod:mcwwindows, mod:rsgauges, mod:bettercaves (incompatible), mod:goldenhopper, mod:journeymap (incompatible), mod:controlling (incompatible), mod:placebo (incompatible), mod:bookshelf (incompatible), mod:wawla (incompatible), mod:botanypots (incompatible), mod:uteamcore, mod:unbreakables (incompatible), mod:darkutils (incompatible), mod:apotheosis (incompatible), mod:progressivebosses, mod:morpheus (incompatible), mod:waila (incompatible), mod:toastcontrol (incompatible), mod:vtweaks (incompatible), mod:jeresources (incompatible), mod:forge (incompatible), mod:mysticalagradditions, mod:prettypipes (incompatible), mod:mysticalagriculture, mod:ironchest, mod:infernalmobs (incompatible), mod:cofh_core (incompatible), mod:ensorcellation (incompatible), mod:usefulbackpacks, mod:torchmaster (incompatible), mod:mousetweaks (incompatible), mod:phosphor, mod:valhelsia_structures (incompatible), mod:jeiintegration (incompatible), mod:curios (incompatible), mod:botania (incompatible), mod:patchouli (incompatible), mod:gravestone, mod:autoreglib (incompatible), mod:quark, mod:storagedrawers (incompatible), mod:performant (incompatible), mod:midnight, mod:naturesaura (incompatible), mod:mcwroofs, mod:appleskin (incompatible), mod:aiimprovements (incompatible), mod:modularrouters, mod:fastleafdecay, mod:overloadedarmorbar (incompatible)
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'

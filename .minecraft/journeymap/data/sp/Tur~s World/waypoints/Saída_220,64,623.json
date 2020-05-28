@@ -1,0 +1,18 @@
+{
+  "id": "Saída_220,64,623",
+  "name": "Saída",
+  "icon": "waypoint-normal.png",
+  "x": 220,
+  "y": 64,
+  "z": 623,
+  "r": 159,
+  "g": 82,
+  "b": 172,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}
